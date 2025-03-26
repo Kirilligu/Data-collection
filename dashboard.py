@@ -3,7 +3,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dash import Dash, html, dcc, Input, Output, callback
 
-df = pd.read_csv('characters_updated.csv')
+df = pd.read_csv('characters.csv')
 df = df.rename(columns={'Имя': 'Name', 'Power': 'Power', 'Speed': 'Speed', 
                         'Precision': 'Precision', 'Endurance': 'Endurance', 
                         'Home Reality': 'Universe', 'Status': 'Status'})
